@@ -3471,7 +3471,7 @@ class MatchType(Boolean):
     """
 
 
-_UUID_RETURN = TypeVar("_UUID_RETURN", str, _python_UUID)
+_UUID_RETURN = Union[str, _python_UUID]
 
 
 class Uuid(Emulated, TypeEngine[_UUID_RETURN]):
